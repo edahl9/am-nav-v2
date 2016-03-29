@@ -1,0 +1,40 @@
+//animation
+@-webkit-keyframes fade-in-out {
+  0%   { opacity: 0; }
+  20%	{opacity: 1;}
+  80% { opacity: 1;}
+  100% { opacity: 0;}
+}
+@-moz-keyframes fade-in-out {
+  0%   { opacity: 0; }
+  20%	{opacity: 1;}
+  80% { opacity: 1;}
+  100% { opacity: 0;}
+}
+@-o-keyframes fade-in-out {
+  0%   { opacity: 0; }
+  20%	{opacity: 1;}
+  80% { opacity: 1;}
+  100% { opacity: 0;}
+}
+@keyframes fade-in-out {
+  0%   { opacity: 0; }
+  20%	{opacity: 1;}
+  80% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
+
+//Animation Playground
+.fade-in-green-row {
+  animation: fade-in-green 1s 1 ease-out;
+}
+
+@keyframes fade-in-green {
+  0% {
+    background: rgba(0,167,156,.5);
+  }
+  100% {
+    background-color:transparent;
+  }
+}

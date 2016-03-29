@@ -1,0 +1,25 @@
+.traffic-lights {
+	margin:0;
+	line-height:1.3em;
+    .red-light i {
+        -webkit-transition: opacity 1500ms ease-out;
+        transition: opacity 1500ms ease-out;
+        color: #CC1F27;
+    }
+    .green-light i {
+        -webkit-transition: opacity 1500ms ease-out;
+        transition: opacity 1500ms ease-out;
+        color: #00A79D;
+    }
+    .gray-light i {
+        -webkit-transition: opacity 1500ms ease-out;
+        transition: opacity 1500ms ease-out;
+        color: #8d8e8e;
+    }
+    .fa {
+    	font-size:12px;
+    }
+	i {
+		margin-right:7px;
+	}
+}
