@@ -11,10 +11,10 @@ title: Prototyping
       .nav-subtitle Organization
       .nav-title Ullamcorper
       .nav-arrow 
-        %i.fa.fa-angle-left
+        %i.fa.fa-angle-down
     .nav-drop#nav-org-drop.hide
       .list
-        %ul.list-unstyled.man
+        %ul.list-unstyled
           %li
             %a
               Ultricies
@@ -28,14 +28,14 @@ title: Prototyping
             %a
               Purus
 
-    .nav-option#nav-space
+    .nav-option.open#nav-space
       .nav-subtitle Space
       .nav-title.hide Commodo
       .nav-arrow 
-        %i.fa.fa-angle-left
-    .nav-drop#nav-space-drop.hide
+        %i.fa.fa-angle-down
+    .nav-drop#nav-space-drop
       .list
-        %ul.list-unstyled.man
+        %ul.list-unstyled
           %li
             %a
               Quam
@@ -48,15 +48,30 @@ title: Prototyping
           %li
             %a
               Commodo
-    .nav-option#nav-app
+    .nav-option#nav-app.disabled
       .nav-subtitle App
       .nav-title.hide Pharetra
       .nav-arrow 
-        %i.fa.fa-angle-left
+        %i.fa.fa-angle-down
+    .nav-drop#nav-app-drop.hide
+      .list
+        %ul.list-unstyled
+          %li
+            %a
+              Mattis
+          %li
+            %a 
+              Pharetra
+          %li
+            %a 
+              Vehicula
+          %li
+            %a
+              Sollicitudin
 
   .additional-links
     .list
-      %ul.list-unstyled
+      %ul.list-unstyled.ptl
         %li
           %a{:href => "/marketplace-list.html"} Marketplace
         %li
@@ -71,7 +86,21 @@ title: Prototyping
           %a{:href => "http://status.run.pivotal.io/", :target => "_blank"} Status
 
 .prototype
-
-  %h1.paxl.man#org-page Org Page
-  %h1.paxl.man#space-page.hide Space Page
-  %h1.paxl.man#app-page.hide App Page
+  #org-page
+    %h1.paxl.man Org Page
+    %ul
+      %li Space 1
+      %li Space 2
+      %li Space 3
+  #space-page.hide
+    %h1.paxl.man Space Page
+    %ul
+      %li App 1
+      %li App 2
+      %li App 3
+  #app-page.hide
+    %h1.paxl.man App Page
+    %ul
+      %li Instance 1
+      %li Instance 2
+      %li Instance 3
