@@ -2,8 +2,76 @@
 title: Prototyping
 ---
 
-.txt-c.mtxxxl
-  %a{:href => "#"}
-    %h1 Begin Prototype
+.topbar
+  .branding Branding
 
+.leftbar
+  .navigation
+    .nav-option.active#nav-org
+      .nav-subtitle Organization
+      .nav-title Ullamcorper
+      .nav-arrow 
+        %i.fa.fa-angle-left
+    .nav-drop#nav-org-drop.hide
+      .list
+        %ul.list-unstyled.man
+          %li
+            %a
+              Ultricies
+          %li
+            %a 
+              Tortor
+          %li
+            %a 
+              Malesuada
+          %li
+            %a
+              Purus
 
+    .nav-option#nav-space
+      .nav-subtitle Space
+      .nav-title.hide Commodo
+      .nav-arrow 
+        %i.fa.fa-angle-left
+    .nav-drop#nav-space-drop.hide
+      .list
+        %ul.list-unstyled.man
+          %li
+            %a
+              Quam
+          %li
+            %a 
+              Condimentum
+          %li
+            %a 
+              Ipsum
+          %li
+            %a
+              Commodo
+    .nav-option#nav-app
+      .nav-subtitle App
+      .nav-title.hide Pharetra
+      .nav-arrow 
+        %i.fa.fa-angle-left
+
+  .additional-links
+    .list
+      %ul.list-unstyled
+        %li
+          %a{:href => "/marketplace-list.html"} Marketplace
+        %li
+          %a{:href => "http://docs.run.pivotal.io/", :target => "_blank"} Docs
+        %li
+          %a{:href => "http://support.run.pivotal.io/home", :target => "_blank"} Support
+        %li
+          %a{:href => "/tools.html"} Tools
+        %li
+          %a{:href => "http://blog.cloudfoundry.com", :target => "_blank"} Blog
+        %li
+          %a{:href => "http://status.run.pivotal.io/", :target => "_blank"} Status
+
+.prototype
+
+  %h1.paxl.man#org-page Org Page
+  %h1.paxl.man#space-page.hide Space Page
+  %h1.paxl.man#app-page.hide App Page
