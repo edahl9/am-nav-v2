@@ -1,12 +1,17 @@
 $(document).ready(function() {
     //Org Open and close dropdown
     $("#nav-org").on('click', function() {
+
         if ($("#nav-org").hasClass("open")) {
             console.log("Org close dropdown")
             $("#nav-org-drop").addClass("hide");
             $("#nav-org").removeClass("open");
+            //open up space dropdown
+            $("#nav-space-drop").removeClass("hide");
+            $("#nav-space").addClass("open");
 
         } else {
+            
             console.log("Org open dropdown")
             $("#nav-org-drop").removeClass("hide");
             $("#nav-org").addClass("open");
@@ -52,6 +57,7 @@ $(document).ready(function() {
             console.log("Space close dropdown")
             $("#nav-space-drop").addClass("hide");
             $("#nav-space").removeClass("open");
+            
         } else {
             console.log("Space open dropdown")
             $("#nav-space-drop").removeClass("hide");
