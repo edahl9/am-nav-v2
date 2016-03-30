@@ -55,7 +55,24 @@ body {
         }
     }
     ul li {
-        padding: 8px 0 8px 20px;
+        padding: 13px 0 13px 20px;
+    }
+    .additional-links {
+        border-top: solid 2px $navy-1;
+        li {
+            position:relative;
+            &.active {
+                &::after {
+                    content: "";
+                    width: 2px;
+                    height: 50px;
+                    background-color: $teal-8;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
     }
 }
 
@@ -90,9 +107,9 @@ body {
             }
         }
         &.disabled {
-            color:$navy-4;
+            color: $navy-4;
             .nav-subtitle {
-                color:$navy-4;
+                color: $navy-4;
             }
         }
     }
@@ -110,7 +127,6 @@ body {
         font-size: 20px;
         line-height: 1;
     }
-
     .nav-drop {
         //transition: all 0.2s ease;
         background-color: $navy-1;

@@ -40,10 +40,14 @@ $(document).ready(function() {
         $("#nav-org").addClass("active");
         $("#nav-space").removeClass("active");
         $("#nav-app").removeClass("active");
+        $("li#tools").removeClass("active");
+        $("li#marketplace").removeClass("active");
         //change page to #space-page
         $("#space-page").addClass("hide");
         $("#app-page").addClass("hide");
         $("#org-page").removeClass("hide");
+        $("#tools-page").addClass("hide");
+        $("#marketplace-page").addClass("hide");
         //open space options
         $("#nav-space-drop").removeClass("hide");
         $("#nav-space").addClass("open");
@@ -57,7 +61,7 @@ $(document).ready(function() {
             console.log("Space close dropdown")
             $("#nav-space-drop").addClass("hide");
             $("#nav-space").removeClass("open");
-            
+
         } else {
             console.log("Space open dropdown")
             $("#nav-space-drop").removeClass("hide");
@@ -88,14 +92,19 @@ $(document).ready(function() {
         $("#nav-space").addClass("active");
         $("#nav-org").removeClass("active");
         $("#nav-app").removeClass("active");
+        $("li#tools").removeClass("active");
+        $("li#marketplace").removeClass("active");
         //change page to #space-page
         $("#org-page").addClass("hide");
         $("#app-page").addClass("hide");
         $("#space-page").removeClass("hide");
+        $("#tools-page").addClass("hide");
+        $("#marketplace-page").addClass("hide");
         //open app options
         $("#nav-app-drop").removeClass("hide");
         $("#nav-app").addClass("open");
         $("#nav-app").removeClass("disabled");
+
     });
 
 
@@ -144,14 +153,68 @@ $(document).ready(function() {
         $("#nav-app").addClass("active");
         $("#nav-org").removeClass("active");
         $("#nav-space").removeClass("active");
+        $("li#tools").removeClass("active");
+        $("li#marketplace").removeClass("active");
         //change page to #space-page
         $("#org-page").addClass("hide");
         $("#space-page").addClass("hide");
         $("#app-page").removeClass("hide");
+        $("#tools-page").addClass("hide");
+        $("#marketplace-page").addClass("hide");
 
     });
 
+    //Marketplace Page
+    $(".additional-links li#marketplace").on('click', function() {
+        //hide dropdowns
+        $("#nav-app-drop").addClass("hide");
+        $("#nav-app").removeClass("open");
+        $("#nav-space-drop").addClass("hide");
+        $("#nav-space").removeClass("open");
+        $("#nav-org-drop").addClass("hide");
+        $("#nav-org").removeClass("open");
 
+        //set marketplace active and remove others
+        $("#nav-app").removeClass("active");
+        $("#nav-org").removeClass("active");
+        $("#nav-space").removeClass("active");
+        $("li#tools").removeClass("active");
+        $("li#marketplace").addClass("active");
+
+        //change page to #marketplace-page
+        $("#org-page").addClass("hide");
+        $("#space-page").addClass("hide");
+        $("#app-page").addClass("hide");
+        $("#tools-page").addClass("hide");
+        $("#marketplace-page").removeClass("hide");
+
+    });
+
+    //Tools Page
+    $(".additional-links li#tools").on('click', function() {
+        //hide dropdowns
+        $("#nav-app-drop").addClass("hide");
+        $("#nav-app").removeClass("open");
+        $("#nav-space-drop").addClass("hide");
+        $("#nav-space").removeClass("open");
+        $("#nav-org-drop").addClass("hide");
+        $("#nav-org").removeClass("open");
+
+        //set tools active and remove others
+        $("#nav-app").removeClass("active");
+        $("#nav-org").removeClass("active");
+        $("#nav-space").removeClass("active");
+        $("li#tools").addClass("active");
+        $("li#marketplace").removeClass("active");
+
+        //change page to #tools-page
+        $("#org-page").addClass("hide");
+        $("#space-page").addClass("hide");
+        $("#app-page").addClass("hide");
+        $("#tools-page").removeClass("hide");
+        $("#marketplace-page").addClass("hide");
+
+    });
 
 
 

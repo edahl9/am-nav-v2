@@ -71,15 +71,15 @@ title: Prototyping
 
   .additional-links
     .list
-      %ul.list-unstyled.ptl
-        %li
-          %a{:href => "/marketplace-list.html"} Marketplace
+      %ul.list-unstyled
+        %li#marketplace
+          %a Marketplace
         %li
           %a{:href => "http://docs.run.pivotal.io/", :target => "_blank"} Docs
         %li
           %a{:href => "http://support.run.pivotal.io/home", :target => "_blank"} Support
-        %li
-          %a{:href => "/tools.html"} Tools
+        %li#tools
+          %a Tools
         %li
           %a{:href => "http://blog.cloudfoundry.com", :target => "_blank"} Blog
         %li
@@ -104,3 +104,12 @@ title: Prototyping
       %li Instance 1
       %li Instance 2
       %li Instance 3
+  #marketplace-page.hide
+    %h1.paxl.man Marketplace
+    %ul
+      %li Service 1
+      %li Service 2
+      %li Service 3
+  #tools-page.hide
+    %h1.paxl.man Tools
+    %p.plxl.man Get your tools here
